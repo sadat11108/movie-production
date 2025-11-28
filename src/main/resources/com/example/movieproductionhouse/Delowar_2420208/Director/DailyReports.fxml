@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Director.DailyReports">
+   <children>
+      <Label layoutX="168.0" layoutY="14.0" style="-fx-background-color: pink;" text="Daily Shooting Reports">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Label>
+      <TableView layoutX="24.0" layoutY="79.0" prefHeight="285.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="95.33331298828125" text="ReportID" />
+          <TableColumn prefWidth="104.00003051757812" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="55.0" text="Shooting Reports:" />
+      <Label layoutX="278.0" layoutY="79.0" text="Report Details:" />
+      <TextArea layoutX="278.0" layoutY="100.0" prefHeight="125.0" prefWidth="313.0" />
+      <Button layoutX="501.0" layoutY="242.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Save Remarks" />
+   </children>
+</AnchorPane>

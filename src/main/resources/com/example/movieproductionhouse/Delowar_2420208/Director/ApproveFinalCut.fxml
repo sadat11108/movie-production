@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Director.ApproveFinalCut">
+   <children>
+      <Label layoutX="197.0" layoutY="14.0" style="-fx-background-color: pink;" text="Approve Final Cut">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="63.0" text="Completed Movies:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView layoutX="59.0" layoutY="87.0" prefHeight="95.0" prefWidth="490.0">
+        <columns>
+          <TableColumn prefWidth="242.6666259765625" text="Title" />
+          <TableColumn prefWidth="246.66671752929688" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="59.0" layoutY="200.0" text="Movie Summary:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="59.0" layoutY="224.0" prefHeight="95.0" prefWidth="490.0" />
+      <Button layoutX="304.0" layoutY="328.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: green;" text="Approve" />
+      <Button layoutX="456.0" layoutY="328.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: red;" text="Reject" />
+   </children>
+</AnchorPane>
