@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.FeedbackController">
+   <children>
+      <Label layoutX="254.0" layoutY="34.0" text="Give Feedback" />
+      <TableView fx:id="movieTableview" layoutX="70.0" layoutY="63.0" prefHeight="130.0" prefWidth="312.0">
+        <columns>
+          <TableColumn fx:id="movienameCol" prefWidth="108.66665649414062" text="Movie Name" />
+          <TableColumn fx:id="genreCol" prefWidth="91.33331298828125" text="Genre" />
+            <TableColumn fx:id="releasedateCol" prefWidth="108.66668701171875" text="Release Date" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="feedbackTextarea" layoutX="118.0" layoutY="212.0" prefHeight="53.0" prefWidth="234.0" />
+      <Label layoutX="37.0" layoutY="239.0" prefHeight="17.0" prefWidth="65.0" text="Feedback" />
+      <Button layoutX="48.0" layoutY="330.0" mnemonicParsing="false" onAction="#submitFeedbackButton" text="Submit Feedback" />
+      <Button layoutX="452.0" layoutY="318.0" mnemonicParsing="false" onAction="#feedbackgobackButton" text="Go back" />
+      <Label layoutX="52.0" layoutY="279.0" text="Rating" />
+      <TextField fx:id="ratingTextField" layoutX="118.0" layoutY="275.0" />
+   </children>
+</AnchorPane>
