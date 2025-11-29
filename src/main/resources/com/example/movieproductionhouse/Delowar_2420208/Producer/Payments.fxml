@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.Payments"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.Payments">
+   <children>
+      <Label layoutX="196.0" layoutY="14.0" style="-fx-background-color: brown;" text="Manage Payments">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="63.0" text="Pending Payments:" />
+      <TableView layoutX="82.0" layoutY="89.0" prefHeight="173.0" prefWidth="425.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Name " />
+          <TableColumn prefWidth="136.66665649414062" text="Pay Amount" />
+            <TableColumn prefWidth="212.0" text="Payment Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="38.0" layoutY="277.0" text="Payment Details:" />
+      <TextArea layoutX="132.0" layoutY="269.0" prefHeight="87.0" prefWidth="375.0" />
+      <Button layoutX="482.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: green;" text="Pay" />
+   </children>
 </AnchorPane>

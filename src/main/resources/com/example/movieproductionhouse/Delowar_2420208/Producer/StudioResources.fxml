@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.StudioResources"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.StudioResources">
+   <children>
+      <Label layoutX="201.0" layoutY="7.0" style="-fx-background-color: green;" text="Studio Resources">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="62.0" text="Studio Resources:" />
+      <Label layoutX="82.0" layoutY="85.0" text="Resource Name:" />
+      <Label layoutX="139.0" layoutY="117.0" text="Type:" />
+      <Label layoutX="125.0" layoutY="147.0" text="Quantity:" />
+      <TextField layoutX="182.0" layoutY="81.0" />
+      <TextField layoutX="182.0" layoutY="113.0" />
+      <TextField layoutX="182.0" layoutY="143.0" />
+      <Button layoutX="359.0" layoutY="143.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Add Resource" />
+      <TableView layoutX="90.0" layoutY="186.0" prefHeight="200.0" prefWidth="414.0">
+        <columns>
+          <TableColumn prefWidth="146.0" text="Resource Name:" />
+          <TableColumn prefWidth="113.3333740234375" text="Type:" />
+            <TableColumn prefWidth="154.6666259765625" text="Quantity:" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
