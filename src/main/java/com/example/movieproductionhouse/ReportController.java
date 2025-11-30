@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse;
 
-public class TrailersController
+public class ReportController
 {
     @javafx.fxml.FXML
     public void initialize() {

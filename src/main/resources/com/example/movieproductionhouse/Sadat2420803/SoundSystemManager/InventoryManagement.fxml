@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.InventoryManagementController">
+   <children>
+      <Label fx:id="EquipmentManagementTableview" layoutX="234.0" layoutY="33.0" prefHeight="17.0" prefWidth="131.0" text="Equipment Management" />
+      <TableView fx:id="EquipmentManagementTableview" layoutX="159.0" layoutY="153.0" prefHeight="157.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="equipmentNameCol" prefWidth="103.33331298828125" text="Equipment Name" />
+          <TableColumn fx:id="serialCol" prefWidth="96.00003051757812" text="Serial" />
+        </columns>
+      </TableView>
+      <Button layoutX="35.0" layoutY="181.0" mnemonicParsing="false" onAction="#additemButton" text="Add Item" />
+      <Label layoutX="14.0" layoutY="87.0" prefHeight="17.0" prefWidth="131.0" text="Enter equipment name" />
+      <TextField fx:id="equipmentNameTextField" layoutX="159.0" layoutY="83.0" />
+      <Label fx:id="serialNumberTextField" layoutX="22.0" layoutY="124.0" prefHeight="17.0" prefWidth="115.0" text="Enter serial number" />
+      <TextField fx:id="serial" layoutX="159.0" layoutY="120.0" />
+      <Button layoutX="68.0" layoutY="310.0" mnemonicParsing="false" onAction="#saveButton" text="Save" />
+      <Label fx:id="outputLabel" layoutX="412.0" layoutY="111.0" prefHeight="69.0" prefWidth="149.0" />
+      <Button layoutX="499.0" layoutY="335.0" mnemonicParsing="false" onAction="#goBackButton" text="Go back" />
+   </children>
+</AnchorPane>

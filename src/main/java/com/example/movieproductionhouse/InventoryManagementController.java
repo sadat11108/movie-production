@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse;
 
-public class NotificationController
+public class InventoryManagementController
 {
     @javafx.fxml.FXML
     public void initialize() {

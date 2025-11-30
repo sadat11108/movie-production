@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse;
 
-public class SearchMoviesController
+public class SoundEditigController
 {
     @javafx.fxml.FXML
     public void initialize() {
