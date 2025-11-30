@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.MarketingPlans">
    <children>
       <Label layoutX="206.0" layoutY="14.0" style="-fx-background-color: yellow;" text="Marketing Plans">
@@ -17,15 +16,15 @@
          </font>
       </Label>
       <Label layoutX="49.0" layoutY="59.0" text="Plans:" />
-      <TableView layoutX="64.0" layoutY="84.0" prefHeight="159.0" prefWidth="473.0">
+      <TableView fx:id="marketingPlansTableView" layoutX="64.0" layoutY="84.0" prefHeight="159.0" prefWidth="473.0">
         <columns>
-          <TableColumn prefWidth="121.33331298828125" text="Movie" />
-          <TableColumn prefWidth="216.00003051757812" text="Strategy" />
-            <TableColumn prefWidth="135.33331298828125" text="Status" />
+          <TableColumn fx:id="movieTableColumn" prefWidth="121.33331298828125" text="Movie" />
+          <TableColumn fx:id="StrategyTableColumn" prefWidth="216.00003051757812" text="Strategy" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="135.33331298828125" text="Status" />
         </columns>
       </TableView>
       <Label layoutX="49.0" layoutY="256.0" text="Plan Details:" />
-      <TextArea layoutX="123.0" layoutY="256.0" prefHeight="71.0" prefWidth="415.0" />
-      <Button layoutX="447.0" layoutY="340.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Update Status" />
+      <TextArea fx:id="marketingPlansDetailsTextArea" layoutX="123.0" layoutY="256.0" prefHeight="71.0" prefWidth="415.0" />
+      <Button layoutX="447.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateStatusButtonOnAction" style="-fx-background-color: green;" text="Update Status" />
    </children>
 </AnchorPane>

@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.StudioResources">
    <children>
       <Label layoutX="201.0" layoutY="7.0" style="-fx-background-color: green;" text="Studio Resources">
@@ -20,15 +19,15 @@
       <Label layoutX="82.0" layoutY="85.0" text="Resource Name:" />
       <Label layoutX="139.0" layoutY="117.0" text="Type:" />
       <Label layoutX="125.0" layoutY="147.0" text="Quantity:" />
-      <TextField layoutX="182.0" layoutY="81.0" />
-      <TextField layoutX="182.0" layoutY="113.0" />
-      <TextField layoutX="182.0" layoutY="143.0" />
-      <Button layoutX="359.0" layoutY="143.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Add Resource" />
-      <TableView layoutX="90.0" layoutY="186.0" prefHeight="200.0" prefWidth="414.0">
+      <TextField fx:id="resourceNameTextField" layoutX="182.0" layoutY="81.0" />
+      <TextField fx:id="typeTextField" layoutX="182.0" layoutY="113.0" />
+      <TextField fx:id="quantityTextField" layoutX="182.0" layoutY="143.0" />
+      <Button layoutX="359.0" layoutY="143.0" mnemonicParsing="false" onAction="#addResourceButtonOnAction" style="-fx-background-color: pink;" text="Add Resource" />
+      <TableView fx:id="studioResourcesTableView" layoutX="90.0" layoutY="186.0" prefHeight="200.0" prefWidth="414.0">
         <columns>
-          <TableColumn prefWidth="146.0" text="Resource Name:" />
-          <TableColumn prefWidth="113.3333740234375" text="Type:" />
-            <TableColumn prefWidth="154.6666259765625" text="Quantity:" />
+          <TableColumn fx:id="resourceNameTableColumn" prefWidth="146.0" text="Resource Name:" />
+          <TableColumn fx:id="typeTableColumn" prefWidth="113.3333740234375" text="Type:" />
+            <TableColumn fx:id="quantityTableColumn" prefWidth="154.6666259765625" text="Quantity:" />
         </columns>
       </TableView>
    </children>

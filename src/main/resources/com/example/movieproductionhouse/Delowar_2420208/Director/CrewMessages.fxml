@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Director.CrewMessages">
    <children>
       <Label layoutX="213.0" layoutY="14.0" style="-fx-background-color: brown;" text="Crew Messages">
@@ -17,14 +16,14 @@
          </font>
       </Label>
       <Label layoutX="40.0" layoutY="45.0" text="Crew Info:" />
-      <TableView layoutX="40.0" layoutY="62.0" prefHeight="153.0" prefWidth="523.0">
+      <TableView fx:id="crewInfoTableView" layoutX="40.0" layoutY="62.0" prefHeight="153.0" prefWidth="523.0">
         <columns>
-          <TableColumn prefWidth="101.33331298828125" text="Name" />
-          <TableColumn prefWidth="98.00003051757812" text="Role" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="260.6666259765625" text="Name" />
+          <TableColumn fx:id="roleTableColumn" prefWidth="262.0000305175781" text="Role" />
         </columns>
       </TableView>
       <Label layoutX="40.0" layoutY="224.0" text="Write Message:" />
-      <TextArea layoutX="40.0" layoutY="241.0" prefHeight="99.0" prefWidth="523.0" />
-      <Button layoutX="470.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Send Message" />
+      <TextArea fx:id="writeMessageTextArea" layoutX="40.0" layoutY="241.0" prefHeight="99.0" prefWidth="523.0" />
+      <Button layoutX="470.0" layoutY="349.0" mnemonicParsing="false" onAction="#sendMessageButtonOnAction" style="-fx-background-color: green;" text="Send Message" />
    </children>
 </AnchorPane>

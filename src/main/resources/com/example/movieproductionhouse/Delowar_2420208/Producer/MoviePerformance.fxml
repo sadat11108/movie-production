@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.MoviePerformance">
    <children>
       <Label layoutX="136.0" layoutY="14.0" style="-fx-background-color: pink;" text="Evaluate Movie Performance">
@@ -17,15 +16,15 @@
          </font>
       </Label>
       <Label layoutX="45.0" layoutY="53.0" text="Movie Performance:" />
-      <TableView layoutX="98.0" layoutY="78.0" prefHeight="139.0" prefWidth="402.0">
+      <TableView fx:id="moviePerformanceTableView" layoutX="98.0" layoutY="78.0" prefHeight="139.0" prefWidth="402.0">
         <columns>
-          <TableColumn prefWidth="143.33334350585938" text="Movie" />
-          <TableColumn prefWidth="147.33331298828125" text="Revenue" />
-            <TableColumn prefWidth="110.0" text="Rating" />
+          <TableColumn fx:id="movieTableColumn" prefWidth="143.33334350585938" text="Movie" />
+          <TableColumn fx:id="revenueTableColumn" prefWidth="147.33331298828125" text="Revenue" />
+            <TableColumn fx:id="ratingTableColumn" prefWidth="110.0" text="Rating" />
         </columns>
       </TableView>
       <Label layoutX="45.0" layoutY="226.0" text="Write Review:" />
-      <TextArea layoutX="123.0" layoutY="226.0" prefHeight="89.0" prefWidth="378.0" />
-      <Button layoutX="418.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: green;" text="Save Review" />
+      <TextArea fx:id="writeReviewTextArea" layoutX="123.0" layoutY="226.0" prefHeight="89.0" prefWidth="378.0" />
+      <Button layoutX="418.0" layoutY="332.0" mnemonicParsing="false" onAction="#saveReviewButtonOnAction" style="-fx-background-color: green;" text="Save Review" />
    </children>
 </AnchorPane>

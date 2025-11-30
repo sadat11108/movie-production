@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproduction.CreateAccount">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproduction.CreateAccount">
     <children>
         <Label layoutX="259.0" layoutY="14.0" text="Create Account" />
         <Label layoutX="41.0" layoutY="62.0" text="Account Type:" />
@@ -16,13 +16,13 @@
         <Label layoutX="73.0" layoutY="172.0" text="Email:" />
         <Label layoutX="51.0" layoutY="210.0" text="Phone No:" />
         <Label layoutX="51.0" layoutY="243.0" prefHeight="17.0" prefWidth="56.0" text="Password:" />
-        <ComboBox fx:id="accountTypeCB" layoutX="128.0" layoutY="58.0" prefWidth="150.0" />
-        <TextField fx:id="idTF" layoutX="129.0" layoutY="102.0" />
-        <TextField fx:id="nameTF" layoutX="129.0" layoutY="138.0" />
-        <TextField fx:id="emailTF" layoutX="129.0" layoutY="168.0" />
-        <TextField fx:id="phoneNoTF" layoutX="129.0" layoutY="206.0" />
-        <PasswordField fx:id="passwordPF" layoutX="129.0" layoutY="239.0" />
-        <Button layoutX="540.0" layoutY="348.0" mnemonicParsing="false" onAction="#loginOA" text="Login" />
-        <Button layoutX="226.0" layoutY="290.0" mnemonicParsing="false" onAction="#createAccountOA" text="Create Account" />
+        <ComboBox fx:id="accountTypeComboBox" layoutX="128.0" layoutY="58.0" prefWidth="150.0" />
+        <TextField fx:id="idTextField" layoutX="129.0" layoutY="102.0" />
+        <TextField fx:id="nameTextField" layoutX="129.0" layoutY="138.0" />
+        <TextField fx:id="emailTextField" layoutX="129.0" layoutY="168.0" />
+        <TextField fx:id="phoneNoTextField" layoutX="129.0" layoutY="206.0" />
+        <PasswordField fx:id="passwordField" layoutX="129.0" layoutY="239.0" />
+        <Button layoutX="540.0" layoutY="348.0" mnemonicParsing="false" onAction="#loginButtonOnAction" text="Login" />
+        <Button layoutX="226.0" layoutY="290.0" mnemonicParsing="false" onAction="#createAccountButtonOnAction" text="Create Account" />
     </children>
 </AnchorPane>

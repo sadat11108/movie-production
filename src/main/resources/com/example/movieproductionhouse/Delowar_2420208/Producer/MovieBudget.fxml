@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Producer.MovieBudget">
    <children>
       <Label layoutX="190.0" layoutY="14.0" style="-fx-background-color: red;" text="Budgets for Movies">
@@ -16,14 +15,14 @@
          </font>
       </Label>
       <Label layoutX="62.0" layoutY="66.0" text="Movie Budgets:" />
-      <TableView layoutX="62.0" layoutY="83.0" prefHeight="200.0" prefWidth="443.0">
+      <TableView fx:id="movieBudgetTableView" layoutX="62.0" layoutY="83.0" prefHeight="200.0" prefWidth="443.0">
         <columns>
-          <TableColumn prefWidth="198.0" text="Movie Name" />
-          <TableColumn prefWidth="136.66665649414062" text="Estimated Budget" />
-            <TableColumn prefWidth="107.99993896484375" text="Status" />
+          <TableColumn fx:id="movieNameTableColumn" prefWidth="198.0" text="Movie Name" />
+          <TableColumn fx:id="estimatedBudgetTableColumn" prefWidth="136.66665649414062" text="Estimated Budget" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="107.99993896484375" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="190.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: green;" text="Approve" />
-      <Button layoutX="358.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: yellow;" text="Edit" />
+      <Button layoutX="190.0" layoutY="296.0" mnemonicParsing="false" onAction="#approveButtonOnAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: green;" text="Approve" />
+      <Button layoutX="358.0" layoutY="296.0" mnemonicParsing="false" onAction="#editButtonOnAction" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: yellow;" text="Edit" />
    </children>
 </AnchorPane>

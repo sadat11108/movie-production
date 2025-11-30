@@ -17,15 +17,15 @@
                         <Font size="15.0" />
                     </font>
                 </Label>
-                <Button mnemonicParsing="false" onAction="#movieBudgetsOA" prefWidth="150.0" text="Movie Budgets" />
-                <Button mnemonicParsing="false" onAction="#studioResourcesOA" prefWidth="150.0" text="Studio Resources" />
-                <Button mnemonicParsing="false" onAction="#progressTrackerOA" prefWidth="150.0" text="Progress Tracker" />
-                <Button mnemonicParsing="false" onAction="#paymentsOA" prefWidth="150.0" text="Payments" />
-                <Button mnemonicParsing="false" onAction="#contractsOA" prefWidth="150.0" text="Contracts" />
-                <Button mnemonicParsing="false" onAction="#generateReportOA" prefWidth="150.0" text="Generate Reports" />
-                <Button mnemonicParsing="false" onAction="#marketingPlansOA" prefWidth="150.0" text="Marketing Plans" />
-                <Button mnemonicParsing="false" onAction="#moviePerformanceOA" prefWidth="150.0" text="Movie Performance" />
-                <Button mnemonicParsing="false" onAction="#producerHomeOA" prefWidth="150.0" text="Home" />
+                <Button mnemonicParsing="false" onAction="#movieBudgetsButtonOnAction" prefWidth="150.0" text="Movie Budgets" />
+                <Button mnemonicParsing="false" onAction="#studioResourcesButtonOnAction" prefWidth="150.0" text="Studio Resources" />
+                <Button mnemonicParsing="false" onAction="#progressTrackerButtonOnAction" prefWidth="150.0" text="Progress Tracker" />
+                <Button mnemonicParsing="false" onAction="#paymentsButtonOnAction" prefWidth="150.0" text="Payments" />
+                <Button mnemonicParsing="false" onAction="#contractsButtonOnAction" prefWidth="150.0" text="Contracts" />
+                <Button mnemonicParsing="false" onAction="#generateReportsButtonOnAction" prefWidth="150.0" text="Generate Reports" />
+                <Button mnemonicParsing="false" onAction="#marketingPlansButtonOnAction" prefWidth="150.0" text="Marketing Plans" />
+                <Button mnemonicParsing="false" onAction="#moviePerformanceButtonOnAction" prefWidth="150.0" text="Movie Performance" />
+                <Button mnemonicParsing="false" onAction="#producerHomeButtonOnAction" prefWidth="150.0" text="Home" />
             </children>
         </VBox>
     </left>

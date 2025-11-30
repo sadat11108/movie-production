@@ -17,20 +17,20 @@
                   <Font size="15.0" />
                </font>
             </Label>
-                <Button mnemonicParsing="false" onAction="#CreateMovieOA" prefWidth="150.0" text="Create Movie" />
-                <Button mnemonicParsing="false" onAction="#assignActorsOA" prefWidth="150.0" text="Assign Actors" />
-                <Button mnemonicParsing="false" onAction="#shootingScheduleOA" prefWidth="150.0" text="Shooting Schedule" />
-                <Button mnemonicParsing="false" onAction="#finalCutOA" prefWidth="150.0" text="Final Cut Approval" />
-                <Button mnemonicParsing="false" onAction="#editScriptOA" prefWidth="150.0" text=" Edit Script " />
-                <Button mnemonicParsing="false" onAction="#messageCrewMembersOA" prefWidth="150.0" text="Crew Messages" />
-                <Button mnemonicParsing="false" onAction="#reviewShootingReportsOA" prefWidth="150.0" text="Daily Reports" />
-                <Button mnemonicParsing="false" onAction="#movieReleaseOA" prefWidth="150.0" text="Submit for Release" />
-                <Button mnemonicParsing="false" onAction="#directorHomeOA" prefWidth="150.0" text="Home" />
+                <Button mnemonicParsing="false" onAction="#CreateMovieButtonOnAction" prefWidth="150.0" text="Create Movie" />
+                <Button mnemonicParsing="false" onAction="#assignActorsButtonOnAction" prefWidth="150.0" text="Assign Actors" />
+                <Button mnemonicParsing="false" onAction="#shootingScheduleButtonOnAction" prefWidth="150.0" text="Shooting Schedule" />
+                <Button mnemonicParsing="false" onAction="#finalCutApprovalButtonOnAction" prefWidth="150.0" text="Final Cut Approval" />
+                <Button mnemonicParsing="false" onAction="#editScriptButtonOnAction" prefWidth="150.0" text=" Edit Script " />
+                <Button mnemonicParsing="false" onAction="#crewMessageButtonOnAction" prefWidth="150.0" text="Crew Messages" />
+                <Button mnemonicParsing="false" onAction="#dailyReportsButtonOnAction" prefWidth="150.0" text="Daily Reports" />
+                <Button mnemonicParsing="false" onAction="#submitReleaseButtonOnAction" prefWidth="150.0" text="Submit for Release" />
+                <Button mnemonicParsing="false" onAction="#directorHomeButtonOnAction" prefWidth="150.0" text="Home" />
             </children>
         </VBox>
     </left>
     <center>
-        <AnchorPane prefHeight="383.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="383.0" prefWidth="450.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="32.0" layoutY="139.0" prefHeight="49.0" prefWidth="385.0" text="Welcome, Director. Select an option from the menu." textFill="#e52020">
                <font>
@@ -40,7 +40,7 @@
          </children></AnchorPane>
     </center>
    <top>
-      <HBox prefHeight="19.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="19.0" prefWidth="600.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" style="-fx-background-color: graay;" text="Login as: Director" textAlignment="CENTER" textFill="#d63b1c">
                <font>
