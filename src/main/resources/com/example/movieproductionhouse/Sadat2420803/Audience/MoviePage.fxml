@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.movieproductionhouse.MoviePageController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.MoviePageController">
+   <children>
+      <Label layoutX="251.0" layoutY="36.0" prefHeight="17.0" prefWidth="69.0" text="Movie Page" />
+      <Label fx:id="movieTitleLabel" layoutX="63.0" layoutY="70.0" prefHeight="29.0" prefWidth="99.0" />
+      <Label fx:id="descriptionMovieLabel" layoutX="63.0" layoutY="121.0" prefHeight="57.0" prefWidth="268.0" />
+      <Button layoutX="82.0" layoutY="229.0" mnemonicParsing="false" onAction="#addToWatchlistButton" text="Add to Watchlist" />
+      <Button layoutX="93.0" layoutY="283.0" mnemonicParsing="false" onAction="#addToFavoritesButton" text="Add to Favorites" />
+      <Button layoutX="293.0" layoutY="229.0" mnemonicParsing="false" onAction="#markAsWatchedButton" text="Mark as Watched" />
+      <Button layoutX="310.0" layoutY="277.0" mnemonicParsing="false" onAction="#playTrailerButton" text="Play Trailer" />
+      <Button layoutX="508.0" layoutY="338.0" mnemonicParsing="false" onAction="#moviepageGobackButton" text="Go back" />
+   </children>
 </AnchorPane>

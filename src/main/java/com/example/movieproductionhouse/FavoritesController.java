@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse;
 
-public class ReportController
+public class FavoritesController
 {
     @javafx.fxml.FXML
     public void initialize() {
