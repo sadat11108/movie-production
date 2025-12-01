@@ -1,0 +1,25 @@
+package com.example.movieproductionhouse.Delowar_2420208.Director;
+
+public class ApproveFinalCut
+{
+    @javafx.fxml.FXML
+    private TableColumn titleTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn statusTableColumn;
+    @javafx.fxml.FXML
+    private TextArea movieSummaryTextArea;
+    @javafx.fxml.FXML
+    private TableView completedMoviesTableView;
+
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
+    @javafx.fxml.FXML
+    public void approveButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void rejectButtonOnAction(ActionEvent actionEvent) {
+    }
+}
