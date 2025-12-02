@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.ActorDashboardViewController">
+    <children>
+        <Label layoutX="200.0" layoutY="30.0" text="Actor/Actress Dashboard">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="welcomeLbl" layoutX="308.0" layoutY="77.0" text="Welcome">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <!-- First Row of Buttons -->
+        <Button fx:id="ViewSceneButton" layoutX="50.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewScenesAndDialoguesButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="View Scenes and Dialogues">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="ViewShootingButton" layoutX="370.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewScheduleButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="View Shooting Schedule">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Second Row of Buttons -->
+        <Button fx:id="UpdateProfileButton" layoutX="50.0" layoutY="250.0" mnemonicParsing="false" onAction="#updateProfileButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Update Profile Information">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="RequestCostumeButton" layoutX="370.0" layoutY="250.0" mnemonicParsing="false" onAction="#requestCostumeMakeupButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Request Costume/Makeup">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Third Row of Buttons -->
+        <Button fx:id="ConfirmShootingButton" layoutX="50.0" layoutY="350.0" mnemonicParsing="false" onAction="#confirmAttendanceButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Confirm Shooting Attendance">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="PracticeTrackerButton" layoutX="370.0" layoutY="350.0" mnemonicParsing="false" onAction="#practiceTrackerButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Practice Tracker">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Fourth Row of Buttons -->
+        <Button fx:id="ViewPaymentButton" layoutX="50.0" layoutY="450.0" mnemonicParsing="false" onAction="#viewPaymentStatusButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="View Payment Status">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="RuleButton" layoutX="370.0" layoutY="450.0" mnemonicParsing="false" onAction="#viewOnSetRulesButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="On-Set Rules and Instructions">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Logout Button -->
+        <Button layoutX="600.0" layoutY="30.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" text="Logout" />
+    </children>
+</AnchorPane>
