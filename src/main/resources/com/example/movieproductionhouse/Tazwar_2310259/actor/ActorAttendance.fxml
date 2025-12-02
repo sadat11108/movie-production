@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.ActorAttendanceController">
+    <children>
+        <Label layoutX="220.0" layoutY="20.0" text="Confirm Shooting Attendance">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <Line endX="670.0" layoutX="50.0" layoutY="60.0" startX="-20.0" />
+
+        <Label layoutX="30.0" layoutY="80.0" text="Upcoming Shooting Dates:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="shootingDatesTableView" layoutX="30.0" layoutY="110.0" prefHeight="300.0" prefWidth="690.0">
+            <columns>
+                <TableColumn fx:id="dateTableColumn" prefWidth="250.40000534057617" text="Date" />
+                <TableColumn fx:id="timeTableColumn" prefWidth="227.20001220703125" text="Time" />
+                <TableColumn fx:id="statusTableColumn" prefWidth="215.199951171875" text="Status" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="30.0" layoutY="430.0" text="select Date:">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="30.0" layoutY="465.0" text="Selected Location:">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="confirmAttendanceButton" layoutX="420.0" layoutY="430.0" mnemonicParsing="false" onAction="#confirmAttendanceButtonOnAction" prefHeight="40.0" prefWidth="150.0" text="Confirm Attendance">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="590.0" layoutY="429.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnAction" prefHeight="40.0" prefWidth="130.0" text="Back to Dashboard" />
+
+        <Label fx:id="statusLabel" alignment="CENTER" layoutX="30.0" layoutY="506.0" prefHeight="35.0" prefWidth="690.0" style="-fx-background-color: #d0f0d0;">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+      <TextField fx:id="SelectLocationTextfield" layoutX="145.0" layoutY="462.0" />
+      <DatePicker fx:id="Datepicker" layoutX="145.0" layoutY="427.0" onAction="#datepickerOnAction" />
+    </children>
+</AnchorPane>

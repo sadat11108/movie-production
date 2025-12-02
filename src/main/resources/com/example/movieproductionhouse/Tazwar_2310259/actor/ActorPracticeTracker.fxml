@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.ActorPracticeTrackerController">
+    <children>
+        <Label layoutX="280.0" layoutY="20.0" text="Practice Tracker">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <Line endX="720.0" layoutX="50.0" layoutY="60.0" startX="-20.0" />
+
+        <Label layoutX="30.0" layoutY="80.0" text="Your Assigned Dialogue Scenes:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="scenesTableView" layoutX="30.0" layoutY="110.0" prefHeight="250.0" prefWidth="740.0">
+            <columns>
+                <TableColumn fx:id="sceneNumberTableColumn" prefWidth="130.39999389648438" text="Scene No" />
+                <TableColumn fx:id="movieTitleTableColumn" prefWidth="160.80001831054688" text="Movie" />
+                <TableColumn fx:id="sceneDescriptionTableColumn" prefWidth="234.39996337890625" text="Scene Description" />
+                <TableColumn fx:id="practiceStatusTableColumn" prefWidth="215.2000732421875" text="Practice Status" />
+            </columns>
+        </TableView>
+
+        <Line endX="720.0" layoutX="50.0" layoutY="380.0" startX="-20.0" />
+
+        <Label layoutX="30.0" layoutY="395.0" text="Select Scene Number:">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+
+        <Button fx:id="markAsPracticedButton" layoutX="30.0" layoutY="575.0" mnemonicParsing="false" onAction="#markAsPracticedButtonOnAction" prefHeight="40.0" prefWidth="200.0" text="Mark as Practiced">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="backToDashboardButton" layoutX="620.0" layoutY="575.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnAction" prefHeight="40.0" prefWidth="150.0" text="Back to Dashboard" />
+      <TextField fx:id="SceneNumberTextfield" layoutX="165.0" layoutY="392.0" />
+    </children>
+</AnchorPane>
