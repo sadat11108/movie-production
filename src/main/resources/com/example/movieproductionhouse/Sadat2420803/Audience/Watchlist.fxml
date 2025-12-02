@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.WatchlistController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.Audience.WatchlistController">
    <children>
       <Label layoutX="228.0" layoutY="33.0" prefHeight="17.0" prefWidth="100.0" text="View Watchlist" />
       <Button layoutX="133.0" layoutY="237.0" mnemonicParsing="false" onAction="#openMovieButton" text="Open Movie" />

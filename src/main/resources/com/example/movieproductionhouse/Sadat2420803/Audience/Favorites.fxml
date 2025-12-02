@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.FavoritesController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.Audience.FavoritesController">
    <children>
       <Label layoutX="272.0" layoutY="27.0" prefHeight="25.0" prefWidth="91.0" text="View Favorites" />
       <Button layoutX="133.0" layoutY="243.0" mnemonicParsing="false" onAction="#openMovieButton" text="Open Movie" />

@@ -6,4 +6,8 @@ module com.example.movieproductionhouse {
 
     opens com.example.movieproductionhouse to javafx.fxml;
     exports com.example.movieproductionhouse;
+    exports com.example.movieproductionhouse.Sadat2420803.Audience;
+    opens com.example.movieproductionhouse.Sadat2420803.Audience to javafx.fxml;
+    exports com.example.movieproductionhouse.Sadat2420803.SoundSystemManager;
+    opens com.example.movieproductionhouse.Sadat2420803.SoundSystemManager to javafx.fxml;
 }

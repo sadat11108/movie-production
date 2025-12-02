@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.DailyTasksController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.SoundSystemManager.DailyTasksController">
    <children>
       <Label layoutX="256.0" layoutY="32.0" text="Daily Tasks" />
       <Button layoutX="68.0" layoutY="98.0" mnemonicParsing="false" onAction="#taskviewButton" text="View task details" />

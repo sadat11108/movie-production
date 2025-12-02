@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.ShootingScheduleController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.SoundSystemManager.ShootingScheduleController">
    <children>
       <Label layoutX="230.0" layoutY="27.0" text="Shooting Requirements" />
       <Label layoutX="78.0" layoutY="91.0" prefHeight="17.0" prefWidth="85.0" text="Shooting Date" />
