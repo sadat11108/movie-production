@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.FeedbackController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.Audience.FeedbackController">
    <children>
       <Label layoutX="254.0" layoutY="34.0" text="Give Feedback" />
       <TableView fx:id="movieTableview" layoutX="70.0" layoutY="63.0" prefHeight="130.0" prefWidth="312.0">

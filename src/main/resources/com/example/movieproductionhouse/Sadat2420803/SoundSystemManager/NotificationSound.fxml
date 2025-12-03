@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.NotificationController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.SoundSystemManager.NotificationSoundController">
    <children>
       <Label layoutX="269.0" layoutY="27.0" text="Notification" />
       <Button layoutX="72.0" layoutY="69.0" mnemonicParsing="false" onAction="#detailsButton" text="Details" />

@@ -6,13 +6,12 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.WatchedController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.Audience.WatchedController">
    <children>
       <Label layoutX="260.0" layoutY="32.0" prefHeight="17.0" prefWidth="96.0" text="Watched Movies" />
       <Button layoutX="108.0" layoutY="285.0" mnemonicParsing="false" onAction="#openMovieButton" text="Open Movie" />
       <Button layoutX="474.0" layoutY="342.0" mnemonicParsing="false" onAction="#goBackButton" text="Go back" />
-      <TableView layoutX="175.0" layoutY="114.0" onSort="#watchedMoviesTableview" prefHeight="141.0" prefWidth="271.0">
+      <TableView fx:id="watchedMoviesTableview" layoutX="175.0" layoutY="114.0" prefHeight="141.0" prefWidth="271.0">
         <columns>
           <TableColumn fx:id="movieTitleCol" prefWidth="94.00006103515625" text=" Movie Title" />
           <TableColumn fx:id="genreCol" prefWidth="86.6666259765625" text="Genre" />
