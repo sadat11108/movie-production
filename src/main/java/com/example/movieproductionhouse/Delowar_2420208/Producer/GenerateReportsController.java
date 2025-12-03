@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
-public class GenerateReports
+public class GenerateReportsController
 {
     @javafx.fxml.FXML
     private DatePicker reportStartDatePicker;

@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
-public class CreateMovie
+public class CreateMovieController
 {
     @javafx.fxml.FXML
     private TableColumn titleTableColumn;

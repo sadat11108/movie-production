@@ -1,15 +1,15 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
-public class Contracts
+public class MovieBudgetController
 {
     @javafx.fxml.FXML
     private TableColumn statusTableColumn;
     @javafx.fxml.FXML
-    private TableColumn nameTableColumn;
+    private TableColumn movieNameTableColumn;
     @javafx.fxml.FXML
-    private TableView contractTableView;
+    private TableView movieBudgetTableView;
     @javafx.fxml.FXML
-    private TableColumn typeTableColumn;
+    private TableColumn estimatedBudgetTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -20,6 +20,6 @@ public class Contracts
     }
 
     @javafx.fxml.FXML
-    public void rejectButtonOnAction(ActionEvent actionEvent) {
+    public void editButtonOnAction(ActionEvent actionEvent) {
     }
 }

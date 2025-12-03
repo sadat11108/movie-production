@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
-public class ProgressTracker
+public class ProgressTrackerController
 {
     @javafx.fxml.FXML
     private TableColumn movieTableColumn;

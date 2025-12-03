@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Director.DailyReports">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Director.DailyReportsController">
    <children>
       <Label layoutX="168.0" layoutY="14.0" style="-fx-background-color: pink;" text="Daily Shooting Reports">
          <font>

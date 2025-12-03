@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
-public class Payments
+public class PaymentsController
 {
     @javafx.fxml.FXML
     private TableView pendingPaymentsTableView;

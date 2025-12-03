@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
-public class CrewMessages
+public class CrewMessagesController
 {
     @javafx.fxml.FXML
     private TableView crewInfoTableView;

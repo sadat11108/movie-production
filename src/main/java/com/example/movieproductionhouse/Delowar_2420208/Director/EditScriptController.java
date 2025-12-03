@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
-public class EditScript
+public class EditScriptController
 {
     @javafx.fxml.FXML
     private TextArea scriptEditorTextArea;

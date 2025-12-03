@@ -1,6 +1,6 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
-public class DailyReports
+public class DailyReportsController
 {
     @javafx.fxml.FXML
     private TableView shottingReportsTableView;

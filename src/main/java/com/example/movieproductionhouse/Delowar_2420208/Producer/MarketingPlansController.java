@@ -1,23 +1,23 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
-public class MoviePerformance
+public class MarketingPlansController
 {
     @javafx.fxml.FXML
-    private TableView moviePerformanceTableView;
+    private TableColumn statusTableColumn;
     @javafx.fxml.FXML
     private TableColumn movieTableColumn;
     @javafx.fxml.FXML
-    private TextArea writeReviewTextArea;
+    private TableColumn StrategyTableColumn;
     @javafx.fxml.FXML
-    private TableColumn ratingTableColumn;
+    private TextArea marketingPlansDetailsTextArea;
     @javafx.fxml.FXML
-    private TableColumn revenueTableColumn;
+    private TableView marketingPlansTableView;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void saveReviewButtonOnAction(ActionEvent actionEvent) {
+    public void updateStatusButtonOnAction(ActionEvent actionEvent) {
     }
 }
