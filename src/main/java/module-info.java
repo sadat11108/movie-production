@@ -2,6 +2,7 @@ module com.example.movieproductionhouse {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
+    requires javafx.graphics;
 
 
     opens com.example.movieproductionhouse to javafx.fxml;

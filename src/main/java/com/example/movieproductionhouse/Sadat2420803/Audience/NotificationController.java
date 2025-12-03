@@ -2,6 +2,8 @@ package com.example.movieproductionhouse.Sadat2420803.Audience;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 public class NotificationController
 {

@@ -14,7 +14,7 @@ public class DashboardController
     public void initialize() {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void trailerButton(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Trailers.fxlm"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -24,19 +24,20 @@ public class DashboardController
         stage.show();
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void FeedbackButton(ActionEvent actionEvent) {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void searchMoviesButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void logoutButton(ActionEvent actionEvent) {
+    public void logoutButton(ActionEvent actionEvent) throws IOException {
+
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void profileButton(ActionEvent actionEvent) {
     }
 
@@ -44,35 +45,7 @@ public class DashboardController
     public void notificationButton(ActionEvent actionEvent) {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void watchlistButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void soundEditingButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void inventoryButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void soundSetupButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void dailyTasksButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void shootingScheduleButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void budgetButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void reportsButton(ActionEvent actionEvent) {
     }
 }
