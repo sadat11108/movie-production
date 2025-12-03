@@ -1,6 +1,8 @@
 package com.example.movieproductionhouse;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 
 public class ActorDashboardViewController {
     @javafx.fxml.FXML

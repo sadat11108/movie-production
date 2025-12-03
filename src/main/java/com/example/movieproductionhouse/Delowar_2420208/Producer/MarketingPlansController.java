@@ -1,5 +1,10 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+
 public class MarketingPlansController
 {
     @javafx.fxml.FXML
