@@ -1,6 +1,10 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
-public class AssignActors
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
+public class AssignActorsController
 {
     @javafx.fxml.FXML
     private TableColumn movieTableColumn;

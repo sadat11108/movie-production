@@ -1,6 +1,11 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
-public class Payments
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+
+public class PaymentsController
 {
     @javafx.fxml.FXML
     private TableView pendingPaymentsTableView;

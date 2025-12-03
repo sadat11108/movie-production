@@ -1,6 +1,11 @@
 package com.example.movieproductionhouse.Delowar_2420208.Producer;
 
-public class ProgressTracker
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
+public class ProgressTrackerController
 {
     @javafx.fxml.FXML
     private TableColumn movieTableColumn;

@@ -1,6 +1,9 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
-public class EditScript
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
+
+public class EditScriptController
 {
     @javafx.fxml.FXML
     private TextArea scriptEditorTextArea;

@@ -1,5 +1,9 @@
 package com.example.movieproductionhouse;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
 public class ActorUpdateProfilecontroller
 {
     @javafx.fxml.FXML

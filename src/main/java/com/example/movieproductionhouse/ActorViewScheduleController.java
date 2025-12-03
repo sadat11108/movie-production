@@ -1,5 +1,11 @@
 package com.example.movieproductionhouse;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class ActorViewScheduleController
 {
     @javafx.fxml.FXML

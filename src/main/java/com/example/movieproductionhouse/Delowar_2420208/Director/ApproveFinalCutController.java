@@ -1,6 +1,11 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
-public class ApproveFinalCut
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+
+public class ApproveFinalCutController
 {
     @javafx.fxml.FXML
     private TableColumn titleTableColumn;
@@ -9,7 +14,7 @@ public class ApproveFinalCut
     @javafx.fxml.FXML
     private TextArea movieSummaryTextArea;
     @javafx.fxml.FXML
-    private TableView completedMoviesTableView;
+    private TableView<String> completedMoviesTableView;
 
     @javafx.fxml.FXML
     public void initialize() {

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Director.DirectorDashboardController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefWidth="150.0" text="Director Menu:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#CreateMovieButtonOnAction" prefWidth="150.0" text="Create Movie" />
+            <Button mnemonicParsing="false" onAction="#assignActorsButtonOnAction" prefWidth="150.0" text="Assign Actors" />
+            <Button mnemonicParsing="false" onAction="#shootingScheduleButtonOnAction" prefWidth="150.0" text="Shooting Schedule" />
+            <Button mnemonicParsing="false" onAction="#finalCutApprovalButtonOnAction" prefWidth="150.0" text="Final Cut Approval" />
+            <Button mnemonicParsing="false" onAction="#editScriptButtonOnAction" prefWidth="150.0" text=" Edit Script " />
+            <Button mnemonicParsing="false" onAction="#crewMessageButtonOnAction" prefWidth="150.0" text="Crew Messages" />
+            <Button mnemonicParsing="false" onAction="#dailyReportsButtonOnAction" prefWidth="150.0" text="Daily Reports" />
+            <Button mnemonicParsing="false" onAction="#submitReleaseButtonOnAction" prefWidth="150.0" text="Submit for Release" />
+            <Button mnemonicParsing="false" onAction="#directorHomeButtonOnAction" prefWidth="150.0" text="Home" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <Label style="-fx-background-color: pink;" text="Director Dashboard" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="18.0" layoutY="165.0" style="-fx-background-color: brown;" text="Welcome, Director. Select an option from the menu." textFill="#95b58f">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
