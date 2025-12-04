@@ -1,10 +1,7 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class CreateMovieController
@@ -53,5 +50,12 @@ public class CreateMovieController
 
     }
 
-    private void showAlert(String title, String message)
+    private void showAlert(String title, String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.show();
+
+    }
 }

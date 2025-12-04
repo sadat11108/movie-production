@@ -37,18 +37,18 @@ public class AssignActorsController
 
     @javafx.fxml.FXML
     public void assignSelectedButtonOnAction(ActionEvent actionEvent) {
-        MovieItem selectedMovie = selectMovieTableView.getSelectionModel().getSelectedItems();
+        MovieItem selectedMovie = selectMovieTableView.getSelectionModel().getSelectedItem();
         ActorItem selectedActor = availableActorsTableColumn.getSelectionModel().getSelectedItem();
 
 
         if (selectedMovie == null) {
-            showAlert("No Movie Selected","Choose a movie before assigning actors");
+            showAlert("No Movie Selected");
             return;
 
         }
 
         if (selectedActor == null) {
-            showAlert("No Actor Selected", "Choose an actor to assigning");
+            showAlert("No Actor Selected");
             return;
 
         }
@@ -58,10 +58,10 @@ public class AssignActorsController
 
     @javafx.fxml.FXML
     public void loadActorsButtonOnAction(ActionEvent actionEvent) {
-        MovieItem selectedMovie = selectMovieTableView.getSelectionModel().getSelectedItems();
+        MovieItem selectedMovie = selectMovieTableView.getSelectionModel().getSelectedItem();
 
         if (selectedMovie == null) {
-            showAlert("No Movie Selected", "Choose a movie before loding actors");
+            showAlert("No Movie Selected");
             return;
         }
 
@@ -76,7 +76,7 @@ public class AssignActorsController
 
     }
 
-    private void showAlert(String title, String message) {
+    private void showAlert(String title) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText(null);

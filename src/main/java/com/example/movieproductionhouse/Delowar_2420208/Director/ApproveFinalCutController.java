@@ -10,13 +10,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class ApproveFinalCutController
 {
     @javafx.fxml.FXML
-    private TableColumn titleTableColumn;
+    private TableColumn<MovieItem, String> titleTableColumn;
     @javafx.fxml.FXML
-    private TableColumn statusTableColumn;
+    private TableColumn<MovieItem, String> statusTableColumn;
     @javafx.fxml.FXML
     private TextArea movieSummaryTextArea;
     @javafx.fxml.FXML
-    private TableView<String> completedMoviesTableView;
+    private TableView<MovieItem> completedMoviesTableView;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -24,23 +24,20 @@ public class ApproveFinalCutController
         titleTableColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
         completedMoviesTableView.getItems().addAll(
                 new MovieItem("Ora 11 Jon", "Completed"),
-                new MovieItem("Amar Bondhu Rashed ", "Completed"));
+                new MovieItem("Amar Bondhu Rashed ", "Completed")
+        );
 
-        boolean newVal;
-        completedMoviesTableView.getSelectionModel().selectedIndexProperty().addListener((observable, oldVaal, newVal) {
+
+        completedMoviesTableView.getSelectionModel().selectedIndexProperty().addListener((observable, oldVal, newVal) -> {
             if (newVal != null) {
-                movieSummaryTextArea.setText(
-                        "Title: " + newVal + "\n"
-                        + "Status: " newVal.getStatus() + "\n\n"
-                        +"Sample Summary: The movie completed, waiting for your judgement."
-                );
+                movieSummaryTextArea.setText("The movie completed, waiting for your judgement.");
             }
         });
     }
 
     @javafx.fxml.FXML
     public void approveButtonOnAction(ActionEvent actionEvent) {
-        MovieItem selected = completedMoviesTableView.getSelectionModel().getSelectedItems();
+        MovieItem selected = completedMoviesTableView.getSelectionModel().getSelectedItem();
 
         if (selected == null) {
             showAlert("No Movie Selectde", "Choose a movie before approved");
@@ -52,7 +49,7 @@ public class ApproveFinalCutController
 
     @javafx.fxml.FXML
     public void rejectButtonOnAction(ActionEvent actionEvent) {
-        MovieItem selectde = completedMoviesTableView.getSelectionModel().getSelectedItems();
+        MovieItem selectde = completedMoviesTableView.getSelectionModel().getSelectedItem();
 
         if (selectde == null) {
             showAlert("No Movie Selectde", "Choose a movie before rejected");
