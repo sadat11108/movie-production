@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Tazwar_2310259.cameraman.DashboardController">
+    <children>
+        <Label layoutX="220.0" layoutY="30.0" text="Cameraman Dashboard">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="welcomeLabel" layoutX="250.0" layoutY="80.0" text="Welcome, Cameraman">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <!-- First Row of Buttons -->
+        <Button layoutX="50.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewShootingScheduleButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="View Shooting Schedule">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="370.0" layoutY="150.0" mnemonicParsing="false" onAction="#uploadFootageButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Upload Footage">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Second Row of Buttons -->
+        <Button layoutX="50.0" layoutY="250.0" mnemonicParsing="false" onAction="#viewUploadedFootageButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="View Uploaded Footage">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="370.0" layoutY="250.0" mnemonicParsing="false" onAction="#reportEquipmentIssueButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Report Equipment Issue">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Third Row of Buttons -->
+        <Button layoutX="50.0" layoutY="350.0" mnemonicParsing="false" onAction="#viewShootingInstructionsButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="View Shooting Instructions">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="370.0" layoutY="350.0" mnemonicParsing="false" onAction="#sceneCompletionButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Scene Completion">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Fourth Row of Buttons -->
+        <Button layoutX="50.0" layoutY="450.0" mnemonicParsing="false" onAction="#viewPaymentStatusButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="View Payment Status">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="370.0" layoutY="450.0" mnemonicParsing="false" onAction="#requestEquipmentButtonOnAction" prefHeight="80.0" prefWidth="280.0" text="Request Equipment">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+
+        <!-- Logout Button -->
+        <Button layoutX="600.0" layoutY="30.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" text="Logout" />
+    </children>
+</AnchorPane>

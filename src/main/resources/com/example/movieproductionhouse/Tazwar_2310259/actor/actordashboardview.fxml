@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.ActorDashboardViewController">
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Tazwar_2310259.Actor.ActorDashboardViewController">
     <children>
         <Label layoutX="200.0" layoutY="30.0" text="Actor/Actress Dashboard">
             <font>

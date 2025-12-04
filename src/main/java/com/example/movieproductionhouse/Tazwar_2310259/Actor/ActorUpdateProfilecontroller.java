@@ -1,11 +1,6 @@
-package com.example.movieproductionhouse;
+package com.example.movieproductionhouse.Tazwar_2310259.Actor;
 
-import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-
-public class ActorUpdateProfilecontroller
-{
+public class ActorUpdateProfilecontroller {
     @javafx.fxml.FXML
     private TextField emergencyContactTextField;
     @javafx.fxml.FXML
@@ -22,10 +17,6 @@ public class ActorUpdateProfilecontroller
     private TextField agentContactTextField;
     @javafx.fxml.FXML
     private Label statusLabel;
-
-    @javafx.fxml.FXML
-    public void initialize() {
-    }
 
     @javafx.fxml.FXML
     public void cancelButtonOnAction(ActionEvent actionEvent) {
