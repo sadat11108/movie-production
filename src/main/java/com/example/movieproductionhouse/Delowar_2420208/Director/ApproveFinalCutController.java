@@ -26,10 +26,11 @@ public class ApproveFinalCutController
                 new MovieItem("Ora 11 Jon", "Completed"),
                 new MovieItem("Amar Bondhu Rashed ", "Completed"));
 
+        boolean newVal;
         completedMoviesTableView.getSelectionModel().selectedIndexProperty().addListener((observable, oldVaal, newVal) {
             if (newVal != null) {
                 movieSummaryTextArea.setText(
-                        "Title: " + newVal.getTitle() + "\n"
+                        "Title: " + newVal + "\n"
                         + "Status: " newVal.getStatus() + "\n\n"
                         +"Sample Summary: The movie completed, waiting for your judgement."
                 );
@@ -55,7 +56,7 @@ public class ApproveFinalCutController
 
         if (selectde == null) {
             showAlert("No Movie Selectde", "Choose a movie before rejected");
-            retuen;
+            return;
         }
 
         showAlert("Rejected", "The final cut has been rejected");
