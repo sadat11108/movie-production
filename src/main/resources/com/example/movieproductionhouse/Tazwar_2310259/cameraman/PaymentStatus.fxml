@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Tazwar_2310259.cameraman.PaymentStatusController">
+    <children>
+        <Label layoutX="280.0" layoutY="20.0" text="Payment Status">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <Line endX="720.0" layoutX="50.0" layoutY="60.0" startX="-20.0" />
+
+        <Label layoutX="30.0" layoutY="80.0" text="Filter by Status:">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="statusFilterComboBox" layoutX="140.0" layoutY="77.0" prefWidth="150.0" promptText="All Payments" />
+
+        <Button layoutX="310.0" layoutY="77.0" mnemonicParsing="false" onAction="#filterPaymentsButtonOnAction" prefHeight="25.0" prefWidth="100.0" text="Filter" />
+
+        <Button layoutX="430.0" layoutY="77.0" mnemonicParsing="false" onAction="#refreshPaymentsButtonOnAction" prefHeight="25.0" prefWidth="100.0" text="Refresh" />
+
+        <Label layoutX="30.0" layoutY="120.0" text="Payment History:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="paymentHistoryTableView" layoutX="30.0" layoutY="150.0" prefHeight="300.0" prefWidth="740.0">
+            <columns>
+                <TableColumn fx:id="paymentIdTableColumn" prefWidth="100.0" text="Payment ID" />
+                <TableColumn fx:id="dateTableColumn" prefWidth="110.0" text="Date" />
+                <TableColumn fx:id="movieTableColumn" prefWidth="150.0" text="Movie" />
+                <TableColumn fx:id="descriptionTableColumn" prefWidth="180.0" text="Description" />
+                <TableColumn fx:id="amountTableColumn" prefWidth="100.0" text="Amount" />
+                <TableColumn fx:id="statusTableColumn" prefWidth="100.0" text="Status" />
+            </columns>
+        </TableView>
+
+        <Line endX="720.0" layoutX="50.0" layoutY="475.0" startX="-20.0" />
+
+        <Label layoutX="30.0" layoutY="490.0" text="Total Paid:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="totalPaidLabel" layoutX="130.0" layoutY="490.0" text="$0.00" style="-fx-background-color: #ccffcc; -fx-padding: 5;" prefWidth="150.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="320.0" layoutY="490.0" text="Total Pending:">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="totalPendingLabel" layoutX="450.0" layoutY="490.0" text="$0.00" style="-fx-background-color: #ffcccc; -fx-padding: 5;" prefWidth="150.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <Button layoutX="30.0" layoutY="535.0" mnemonicParsing="false" onAction="#viewPaymentDetailsButtonOnAction" prefHeight="35.0" prefWidth="180.0" text="View Payment Details" />
+
+        <Button layoutX="230.0" layoutY="535.0" mnemonicParsing="false" onAction="#downloadPaymentReportButtonOnAction" prefHeight="35.0" prefWidth="180.0" text="Download Report" />
+
+        <Button layoutX="590.0" layoutY="535.0" mnemonicParsing="false" onAction="#backToDashboardButtonOnAction" prefHeight="35.0" prefWidth="180.0" text="Back to Dashboard" />
+    </children>
+</AnchorPane>

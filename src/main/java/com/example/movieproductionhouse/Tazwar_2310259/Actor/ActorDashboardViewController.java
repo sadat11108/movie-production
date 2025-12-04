@@ -1,8 +1,4 @@
-package com.example.movieproductionhouse;
-
-import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+package com.example.movieproductionhouse.Tazwar_2310259.Actor;
 
 public class ActorDashboardViewController {
     @javafx.fxml.FXML
@@ -57,9 +53,6 @@ public class ActorDashboardViewController {
     }
 
     @javafx.fxml.FXML
-    public void viewScenesAndDialoguesButtonOnAction(ActionEvent actionEvent) {
-    }
-
     public void viewScenesAndDialoguesButtonOnAction(ActionEvent actionEvent) {
     }
 }
