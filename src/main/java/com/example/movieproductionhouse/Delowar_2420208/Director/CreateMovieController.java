@@ -40,7 +40,7 @@ public class CreateMovieController
 
         }
 
-        MovieItem movie = new MovieItem(title, genre, description);
+        MovieItem movie = new MovieItem(title, genre);
         existingMoviesTableView.getItems().add(movie);
         movieTitleTextField.clear();
         genreTextField.clear();

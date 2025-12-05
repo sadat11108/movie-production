@@ -24,13 +24,17 @@ public class ApproveFinalCutController
         titleTableColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
         completedMoviesTableView.getItems().addAll(
                 new MovieItem("Ora 11 Jon", "Completed"),
-                new MovieItem("Amar Bondhu Rashed ", "Completed")
-        );
+                new MovieItem("Amar Bondhu Rashed ", "Completed"));
 
 
-        completedMoviesTableView.getSelectionModel().selectedIndexProperty().addListener((observable, oldVal, newVal) -> {
+        completedMoviesTableView.getSelectionModel().selectedIndexProperty().addListener((observable, oldVaal, newVal) -> {
             if (newVal != null) {
-                movieSummaryTextArea.setText("The movie completed, waiting for your judgement.");
+                movieSummaryTextArea.setText(
+                        "Title: " + newVal.getClass() + "\n"
+                                + "Status: " + newVal.getClass() + "\n\n"
+                                + "Sample Summary: The film stands completed, waiting for your judgement."
+                );
+
             }
         });
     }
@@ -74,16 +78,23 @@ public class ApproveFinalCutController
         public MovieItem(String title, String status) {
             this.title = title;
             this.status = status;
-
         }
 
         public String getTitle() {
             return title;
+        }
 
+        public void setTitle(String title) {
+            this.title = title;
         }
 
         public String getStatus() {
             return status;
         }
+
+        public void setStatus(String status) {
+            this.status = status;
+        }
+
     }
 }

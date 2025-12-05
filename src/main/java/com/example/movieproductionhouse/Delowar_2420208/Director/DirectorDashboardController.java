@@ -12,7 +12,7 @@ import java.io.IOException;
 public class DirectorDashboardController {
     @javafx.fxml.FXML
     public void directorHomeButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DirectorDashboardFxml.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/DirectorDashboardFxml.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -21,7 +21,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void CreateMovieButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CreateMovie.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/CreateMovie.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -30,7 +30,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void crewMessageButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CrewMessages.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/CrewMessages.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -39,7 +39,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void shootingScheduleButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ShootingSchedule.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/ShootingSchedule.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -48,7 +48,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void submitReleaseButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("MovieRelease.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/MovieRelease.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -57,7 +57,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void dailyReportsButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DailyReports.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/DailyReports.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -67,7 +67,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void assignActorsButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("AssignActors.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/AssignActors.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -76,7 +76,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void editScriptButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("EditScript.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/EditScript.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -85,7 +85,7 @@ public class DirectorDashboardController {
 
     @javafx.fxml.FXML
     public void finalCutApprovalButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApproveFinalCut.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("com/example/movieproductionhouse/Delowar_2420208/Director/ApproveFinalCut.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);

@@ -20,6 +20,10 @@ public class AssignActorsController
     private TableColumn<MovieItem, String> genreTableColumn;
     @javafx.fxml.FXML
     private TableColumn<ActorItem, String> roleTableColumn;
+    
+    private String message;
+    private String movie;
+    private String genre;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -29,7 +33,7 @@ public class AssignActorsController
         roleTableColumn.setCellValueFactory(new PropertyValueFactory<>("role"));
 
         selectMovieTableView.getItems().addAll(
-                new MovieItem("Tuffan", "Action"),
+                new MovieItem("Toofan", "Action"),
                 new MovieItem("Monpura", "Drama"),
                 new MovieItem("Dhaka Attack", "Adventure")
         );
@@ -81,42 +85,8 @@ public class AssignActorsController
         alert.setTitle(title);
         alert.setHeaderText(null);
         alert.setContentText(message);
-        alert.show();
+        alert.showAndWait();
     }
 
-    public static class MovieItem {
-        private String movie;
-        private String genre;
-
-        public MovieItem(String movie, String genre) {
-            this.movie = movie;
-            this.genre = genre;
-        }
-    }
-
-    public String getMovie() {
-        return movie;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public static class ActorItem {
-        private String name;
-        private String role;
-
-        public ActorItem(String name, String role) {
-            this.name = name;
-            this.role = role;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public String getRole() {
-            return role;
-        }
-    }
+    
 }
