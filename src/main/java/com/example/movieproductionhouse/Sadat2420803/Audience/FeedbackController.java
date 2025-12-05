@@ -11,15 +11,15 @@ public class FeedbackController
     @javafx.fxml.FXML
     private TextField ratingTextField;
     @javafx.fxml.FXML
-    private TableView movieTableview;
+    private TableView<Feedback> movieTableview;
     @javafx.fxml.FXML
-    private TableColumn movienameCol;
+    private TableColumn<Feedback,String> movienameCol;
     @javafx.fxml.FXML
-    private TableColumn genreCol;
+    private TableColumn<Feedback,String> genreCol;
     @javafx.fxml.FXML
     private TextArea feedbackTextarea;
     @javafx.fxml.FXML
-    private TableColumn releasedateCol;
+    private TableColumn<Feedback,Integer> releasedateCol;
 
     @javafx.fxml.FXML
     public void initialize() {

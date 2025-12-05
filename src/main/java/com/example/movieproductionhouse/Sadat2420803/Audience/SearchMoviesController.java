@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,18 +17,22 @@ public class SearchMoviesController
     @javafx.fxml.FXML
     private TextField EnterMovieNameTextField;
     @javafx.fxml.FXML
-    private TableColumn movienameCol;
+    private TableColumn<Movie,String> movienameCol;
     @javafx.fxml.FXML
-    private TableColumn genreCol;
+    private TableColumn<Movie,String> genreCol;
     @javafx.fxml.FXML
-    private TableColumn ratingCol;
+    private TableColumn<Feedback,Double> ratingCol;
     @javafx.fxml.FXML
-    private TableColumn releasedateCol;
+    private TableColumn<Movie,Integer> releasedateCol;
     @javafx.fxml.FXML
-    private TableView searchmovieTableview;
+    private TableView<Movie> searchmovieTableview;
 
     @javafx.fxml.FXML
     public void initialize() {
+        movienameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
+        genreCol.setCellValueFactory(new PropertyValueFactory<>("genre"));
+        releasedateCol.setCellValueFactory(new PropertyValueFactory<>("year"));
+        ratingCol.setCellValueFactory(new PropertyValueFactory<>("rating"));
     }
 
     @javafx.fxml.FXML

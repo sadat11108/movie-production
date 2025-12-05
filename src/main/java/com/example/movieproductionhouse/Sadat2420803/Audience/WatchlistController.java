@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,16 +14,19 @@ import java.io.IOException;
 public class WatchlistController
 {
     @javafx.fxml.FXML
-    private TableColumn yearCol;
+    private TableColumn<Movie,Integer> yearCol;
     @javafx.fxml.FXML
-    private TableColumn genreCol;
+    private TableColumn<Movie,String> genreCol;
     @javafx.fxml.FXML
-    private TableColumn movieTitleCol;
+    private TableColumn<Movie,String> movieTitleCol;
     @javafx.fxml.FXML
-    private TableView watchlistTableview;
+    private TableView<Movie> watchlistTableview;
 
     @javafx.fxml.FXML
     public void initialize() {
+        movieTitleCol.setCellValueFactory(new PropertyValueFactory<>("name"));
+        genreCol.setCellValueFactory(new PropertyValueFactory<>("genre"));
+        yearCol.setCellValueFactory(new PropertyValueFactory<>("year"));
     }
 
     @javafx.fxml.FXML

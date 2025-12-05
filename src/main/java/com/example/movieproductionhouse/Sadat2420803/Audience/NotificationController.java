@@ -2,38 +2,29 @@ package com.example.movieproductionhouse.Sadat2420803.Audience;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.CheckBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 
 public class NotificationController
 {
-
     @javafx.fxml.FXML
-    private TableColumn typeCol;
+    private CheckBox SelectGenresSciFi;
     @javafx.fxml.FXML
-    private TableColumn titleCol;
+    private CheckBox SelectGenresComedy;
     @javafx.fxml.FXML
-    private TableColumn dateCol;
+    private CheckBox SelectGenresAction;
     @javafx.fxml.FXML
-    private TableView notificationTableview;
+    private CheckBox SelectGenresDrama;
+    @javafx.fxml.FXML
+    private CheckBox SelectGenresHorror;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void notificationgobackButton(ActionEvent actionEvent) {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void SaveSubscriptionButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void notificationGobackButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void detailsButton(ActionEvent actionEvent) {
     }
 }
