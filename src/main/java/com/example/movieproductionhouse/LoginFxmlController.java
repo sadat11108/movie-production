@@ -1,40 +1,34 @@
 package com.example.movieproductionhouse;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.LoadException;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import javax.security.auth.login.LoginContext;
 import java.io.IOException;
-import java.util.EventObject;
 
 public class LoginFxmlController
 {
-    @FXML
+    @javafx.fxml.FXML
     private PasswordField passwordPF;
-    @FXML
+    @javafx.fxml.FXML
     private ComboBox<String> userTypeCB;
-    @FXML
+    @javafx.fxml.FXML
     private TextField idTF;
 
-    @FXML
+    @javafx.fxml.FXML
     public void initialize() {
         userTypeCB.getItems().addAll("Director", "Producer", "Actors and Actresses ", "Camera Man", "Audience", "Sound system manager" );
 
-
-        userTypeCB.setValue("Director");
-
     }
 
-    @FXML
+    @javafx.fxml.FXML
     public void createAccountOA(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CreateAccount.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -48,54 +42,76 @@ public class LoginFxmlController
     }
 
 
-    @FXML
-    public void loginOA(ActionEvent actionEvent) {
-        String userType = userTypeCB.getValue();
+    @javafx.fxml.FXML
+    public void loginOA(ActionEvent actionEvent) throws IOException {
+        if (userTypeCB.getValue().equals("Director")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/movieproductionhouse/Delowar_2420208/Director/DirectorDashboardFxml.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
 
-        if (userType == null) {
-            System.out.println("⚠ Select a user type first.");
+        }
+
+        else if (userTypeCB.getValue().equals("Producer")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/movieproductionhouse/Delowar_2420208/Producer/ProducerDashboardFxml.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+
+        }
+
+        else if (userTypeCB.getValue().equals("Audience")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/Audience/Profile.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+
+            stage.setScene(scene);
+            stage.show();
+        }
+
+        else if (userTypeCB.getValue().equals("Sound system manager")) {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+
+            stage.setScene(scene);
+            stage.show();
+        }
+
+        String id = idTF.getText();
+        String pass = passwordPF.getText();
+        String user = userTypeCB.getValue();
+
+        // --- validation ---
+        if (id == null || id.isEmpty()) {
+            showAlert("ID cannot be empty.");
             return;
         }
 
-        try {
-            switch (userType) {
-
-                case "Director" -> switchScene("/dashboard/director_dashboard.fxml", "Director Dashboard");
-
-                case "Producer" -> switchScene("/dashboard/producer_dashboard.fxml", "Producer Dashboard");
-
-                case "Actors and Actresses" ->
-                        switchScene("/dashboard/actors_dashboard.fxml", "Actors & Actresses Dashboard");
-
-                case "Camera Man" ->
-                        switchScene("/dashboard/cameraman_dashboard.fxml", "Camera Operator Dashboard");
-
-                case "Audience" ->
-                        switchScene("/dashboard/audience_dashboard.fxml", "Audience Dashboard");
-
-                case "Sound system manager" ->
-                        switchScene("/dashboard/sound_manager_dashboard.fxml", "Sound Manager Dashboard");
-
-                default -> System.out.println("⚠ Unknown user type.");
-            }
-
-        } catch (IOException e) {
-            System.out.println("⚠ Error switching scene: " + e.getMessage());
+        if (pass == null || pass.isEmpty()) {
+            showAlert("Password cannot be empty.");
+            return;
         }
+
+        if (user == null || user.isEmpty()) {
+            showAlert("Please select a user type.");
+            return;
+        }
+
+
+
+
     }
 
-    // ---------------------------------------------------------
-    // Helper method for switching dashboards
-    // ---------------------------------------------------------
-    private void switchScene(String fxmlPath, String title) throws IOException {
-
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CrateAccount.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        EventObject actionEvent = null;
-        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
+    private void showAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
+
 
 
 }

@@ -39,5 +39,6 @@
             <TableColumn fx:id="descriptionTableColumn" minWidth="7.999969482421875" prefWidth="181.33333333333331" text="Description" />
         </columns>
       </TableView>
+      <Button layoutX="469.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBackButtonOnAction" text="Go Back Director Daashbord" />
    </children>
 </AnchorPane>
