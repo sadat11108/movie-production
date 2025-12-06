@@ -24,10 +24,11 @@ public class CreateAccountController {
     @javafx.fxml.FXML
     private PasswordField passwordField;
     @javafx.fxml.FXML
-    private ComboBox accountTypeComboBox;
+    private ComboBox<String> accountTypeComboBox;
 
     @javafx.fxml.FXML
     public void initialize() {
+        accountTypeComboBox.getItems().addAll("Director","Producer","Audience","SoundSystemManager","Actor","CameraMan");
 
     }
 
