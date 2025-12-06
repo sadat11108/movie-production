@@ -44,7 +44,6 @@ public class WatchlistController
     @javafx.fxml.FXML
     public void openMovieButton(ActionEvent actionEvent) {
         watchlistTableview.getItems().clear();
-        
 
 
     }
