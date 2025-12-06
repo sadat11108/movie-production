@@ -21,7 +21,7 @@ public class ProducerDashboardController {
 
     @javafx.fxml.FXML
     public void producerHomeButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ProducerDashboardFxml.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/movieproductionhouse/Delowar_2420208/Producer/ProducerDashboardFxml.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);

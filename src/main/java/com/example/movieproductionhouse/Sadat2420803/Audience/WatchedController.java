@@ -31,7 +31,7 @@ public class WatchedController
 
     @javafx.fxml.FXML
     public void goBackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("com/example.movieproductionhouse/Sadat2420803/Audience/MoviePage"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example.movieproductionhouse/Sadat2420803/Audience/MoviePage"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 

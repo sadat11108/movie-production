@@ -14,7 +14,7 @@ import java.io.IOException;
 public class BudgetController
 {
     @javafx.fxml.FXML
-    private ComboBox categoryCombobox;
+    private ComboBox<String> categoryCombobox;
     @javafx.fxml.FXML
     private TextField enterAmountTextField;
     @javafx.fxml.FXML
@@ -24,11 +24,13 @@ public class BudgetController
 
     @javafx.fxml.FXML
     public void initialize() {
+        categoryCombobox.getItems().addAll("Equipment","Transport","Maintenance","Studio Rent");
+
     }
 
     @javafx.fxml.FXML
     public void budgetGobackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
+        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
         Scene scene = new Scene(fxmlLoader.load());
 
 

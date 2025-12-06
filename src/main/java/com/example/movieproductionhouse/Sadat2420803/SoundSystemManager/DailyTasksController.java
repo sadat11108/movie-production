@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,21 +14,24 @@ import java.io.IOException;
 public class DailyTasksController
 {
     @javafx.fxml.FXML
-    private TableColumn statusCol;
+    private TableColumn<Task,String> statusCol;
     @javafx.fxml.FXML
-    private TableColumn taskNameCol;
+    private TableColumn<Task,String> taskNameCol;
     @javafx.fxml.FXML
-    private TableView dailyTaskTableview;
+    private TableView<Task> dailyTaskTableview;
     @javafx.fxml.FXML
-    private TableColumn timeCol;
+    private TableColumn<Task,Double> timeCol;
 
     @javafx.fxml.FXML
     public void initialize() {
+        taskNameCol.setCellValueFactory(new PropertyValueFactory<>("taskName"));
+        statusCol.setCellValueFactory(new PropertyValueFactory<>("status"));
+        timeCol.setCellValueFactory(new PropertyValueFactory<>("time"));
     }
 
     @javafx.fxml.FXML
     public void dailyTaskGobackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
+        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
         Scene scene = new Scene(fxmlLoader.load());
 
 

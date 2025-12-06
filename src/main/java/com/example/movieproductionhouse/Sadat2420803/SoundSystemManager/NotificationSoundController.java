@@ -27,7 +27,7 @@ public class NotificationSoundController
 
     @javafx.fxml.FXML
     public void notificationGobackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
+        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
         Scene scene = new Scene(fxmlLoader.load());
 
 

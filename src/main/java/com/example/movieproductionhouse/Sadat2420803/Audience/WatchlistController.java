@@ -11,6 +11,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.jar.Attributes;
 
 public class WatchlistController
 {
@@ -32,7 +33,7 @@ public class WatchlistController
 
     @javafx.fxml.FXML
     public void goBackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("com/example/movieproductionhouse/Sadat2420803/Audience/MoviePage"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/Audience/MoviePage"));
         Scene scene = new Scene(fxmlLoader.load());
 
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -42,9 +43,12 @@ public class WatchlistController
 
     @javafx.fxml.FXML
     public void openMovieButton(ActionEvent actionEvent) {
+        watchlistTableview.getItems().clear();
+
+
     }
     private void showAlert(String msg){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setHeaderText(null);
         alert.setContentText(msg);
         alert.show();
