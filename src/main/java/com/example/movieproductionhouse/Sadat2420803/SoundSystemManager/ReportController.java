@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,23 +15,28 @@ import java.io.IOException;
 public class ReportController
 {
     @javafx.fxml.FXML
-    private TableView reportTableview;
+    private TableView<Report> reportTableview;
     @javafx.fxml.FXML
-    private TableColumn describtionCol;
+    private TableColumn<Report,String> describtionCol;
     @javafx.fxml.FXML
-    private ComboBox reportTypeComboBox;
+    private ComboBox<String> reportTypeComboBox;
     @javafx.fxml.FXML
-    private TableColumn valueCol;
+    private TableColumn<Report,String> valueCol;
     @javafx.fxml.FXML
-    private TableColumn itemCol;
+    private TableColumn<Report,String> itemCol;
 
     @javafx.fxml.FXML
     public void initialize() {
+        reportTypeComboBox.getItems().addAll("Equipment Report","Budget Report","Task Report","Shooting Schedule Report");
+        describtionCol.setCellValueFactory(new PropertyValueFactory<>("describtion"));
+
+        valueCol.setCellValueFactory(new PropertyValueFactory<>("value"));
+        itemCol.setCellValueFactory(new PropertyValueFactory<>("item"));
     }
 
     @javafx.fxml.FXML
     public void reportGobackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
+        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
         Scene scene = new Scene(fxmlLoader.load());
 
 

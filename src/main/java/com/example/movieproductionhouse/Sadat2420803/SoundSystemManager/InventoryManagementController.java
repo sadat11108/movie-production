@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,7 +16,7 @@ import java.io.IOException;
 public class InventoryManagementController
 {
     @javafx.fxml.FXML
-    private TableView EquipmentTableview;
+    private TableView<Inventory> EquipmentTableview;
     @javafx.fxml.FXML
     private TextField equipmentNameTextField;
     @javafx.fxml.FXML
@@ -25,12 +26,14 @@ public class InventoryManagementController
     @javafx.fxml.FXML
     private Label EquipmentManagementTableview;
     @javafx.fxml.FXML
-    private TableColumn equipmentNameCol;
+    private TableColumn<Inventory,String> equipmentNameCol;
     @javafx.fxml.FXML
-    private TableColumn serialCol;
+    private TableColumn<Inventory,Integer> serialCol;
 
     @javafx.fxml.FXML
     public void initialize() {
+        equipmentNameCol.setCellValueFactory(new PropertyValueFactory<>("equipmentName"));
+        serialCol.setCellValueFactory(new PropertyValueFactory<>("equipmentSerial "));
     }
 
     @javafx.fxml.FXML
@@ -39,7 +42,7 @@ public class InventoryManagementController
 
     @javafx.fxml.FXML
     public void goBackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
+        FXMLLoader fxmlLoader =  new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/SoundSystemManager/DashboardSound"));
         Scene scene = new Scene(fxmlLoader.load());
 
 

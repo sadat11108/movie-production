@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Sadat2420803.Audience.DashboardController">
    <children>
       <Label layoutX="271.0" layoutY="36.0" prefHeight="44.0" prefWidth="99.0" text="Welcome">
@@ -20,5 +19,6 @@
       <Button layoutX="370.0" layoutY="98.0" mnemonicParsing="false" onAction="#FeedbackButton" text="Feedback" />
       <Button layoutX="380.0" layoutY="153.0" mnemonicParsing="false" onAction="#watchlistButton" text="Watchlist" />
       <Button layoutX="244.0" layoutY="223.0" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
+      <Button layoutX="77.0" layoutY="188.0" mnemonicParsing="false" onAction="#moviePageButton" text="Movie Page" />
    </children>
 </AnchorPane>

@@ -41,7 +41,7 @@ public class SearchMoviesController
 
     @javafx.fxml.FXML
     public void searchMoviegobackButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("com/example/movieproductionhouse/Sadat2420803/Audience/Dashboard"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/movieproductionhouse/Sadat2420803/Audience/Dashboard"));
         Scene scene = new Scene(fxmlLoader.load());
 
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
