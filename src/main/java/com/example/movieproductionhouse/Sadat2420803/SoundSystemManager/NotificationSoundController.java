@@ -13,13 +13,13 @@ import java.io.IOException;
 public class NotificationSoundController
 {
     @javafx.fxml.FXML
-    private TableColumn typeCol;
+    private TableColumn<Notification,String> typeCol;
     @javafx.fxml.FXML
-    private TableColumn titleCol;
+    private TableColumn<Notification,String> titleCol;
     @javafx.fxml.FXML
-    private TableColumn dateCol;
+    private TableColumn<Notification,Integer> dateCol;
     @javafx.fxml.FXML
-    private TableView notificationTableview;
+    private TableView<Notification> notificationTableview;
 
     @javafx.fxml.FXML
     public void initialize() {
