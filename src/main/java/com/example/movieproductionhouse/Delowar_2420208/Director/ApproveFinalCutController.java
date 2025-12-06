@@ -1,11 +1,18 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
+import com.example.movieproductionhouse.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class ApproveFinalCutController
 {
@@ -27,11 +34,11 @@ public class ApproveFinalCutController
                 new MovieItem("Amar Bondhu Rashed ", "Completed"));
 
 
-        completedMoviesTableView.getSelectionModel().selectedIndexProperty().addListener((observable, oldVaal, newVal) -> {
+        completedMoviesTableView.getSelectionModel().selectedItemProperty().addListener((observable, oldVaal, newVal) -> {
             if (newVal != null) {
                 movieSummaryTextArea.setText(
-                        "Title: " + newVal.getClass() + "\n"
-                                + "Status: " + newVal.getClass() + "\n\n"
+                        "Title: " + newVal.getTitle() + "\n"
+                                + "Status: " + newVal.getStatus() + "\n\n"
                                 + "Sample Summary: The film stands completed, waiting for your judgement."
                 );
 
@@ -69,6 +76,15 @@ public class ApproveFinalCutController
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.show();
+    }
+
+    @javafx.fxml.FXML
+    public void goBackDDBOA(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/com/example/movieproductionhouse/Delowar_2420208/Director/DirectorDashboardFxml.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     public static class MovieItem {

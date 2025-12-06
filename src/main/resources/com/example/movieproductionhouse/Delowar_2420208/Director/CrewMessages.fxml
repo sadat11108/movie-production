@@ -25,5 +25,6 @@
       <Label layoutX="40.0" layoutY="224.0" text="Write Message:" />
       <TextArea fx:id="writeMessageTextArea" layoutX="40.0" layoutY="241.0" prefHeight="99.0" prefWidth="523.0" />
       <Button layoutX="470.0" layoutY="349.0" mnemonicParsing="false" onAction="#sendMessageButtonOnAction" style="-fx-background-color: green;" text="Send Message" />
+      <Button layoutX="41.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBDDBOA" text="Go Back Director Dashboard" />
    </children>
 </AnchorPane>

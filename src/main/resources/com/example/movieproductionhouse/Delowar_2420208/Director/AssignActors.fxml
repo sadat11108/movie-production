@@ -30,7 +30,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <TableView fx:id="availableActorsTableColumn" layoutX="62.0" layoutY="257.0" prefHeight="120.0" prefWidth="376.0">
+      <TableView fx:id="availableActorsTableView" layoutX="62.0" layoutY="257.0" prefHeight="120.0" prefWidth="376.0">
         <columns>
           <TableColumn fx:id="nameTableColumn" prefWidth="178.0" text="Name" />
           <TableColumn fx:id="roleTableColumn" prefWidth="197.33334350585938" text="Role" />
@@ -38,5 +38,6 @@
       </TableView>
       <Button layoutX="447.0" layoutY="103.0" mnemonicParsing="false" onAction="#loadActorsButtonOnAction" text="Load Actors" />
       <Button layoutX="447.0" layoutY="257.0" mnemonicParsing="false" onAction="#assignSelectedButtonOnAction" text="Assign Selected" />
+      <Button layoutX="443.0" layoutY="344.0" mnemonicParsing="false" onAction="#goBDDBOA" text="Go Back Director Dashboard" />
    </children>
 </AnchorPane>

@@ -84,7 +84,6 @@ public class LoginFxmlController
         String pass = passwordPF.getText();
         String user = userTypeCB.getValue();
 
-        // --- validation ---
         if (id == null || id.isEmpty()) {
             showAlert("ID cannot be empty.");
             return;

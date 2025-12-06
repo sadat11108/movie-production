@@ -31,5 +31,6 @@
             <TableColumn fx:id="locationTableColumn" prefWidth="100.0" text="Location" />
         </columns>
       </TableView>
+      <Button layoutX="31.0" layoutY="332.0" mnemonicParsing="false" onAction="#goBDDBOA" text="Go Back Director Dashboard" />
    </children>
 </AnchorPane>

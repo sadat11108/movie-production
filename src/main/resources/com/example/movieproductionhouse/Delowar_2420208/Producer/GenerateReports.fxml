@@ -19,5 +19,6 @@
       <DatePicker fx:id="reportStartDatePicker" layoutX="144.0" layoutY="87.0" />
       <DatePicker fx:id="ReportEndDatePicker" layoutX="144.0" layoutY="121.0" />
       <Button layoutX="203.0" layoutY="174.0" mnemonicParsing="false" onAction="#generateReportButtonOnAction" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: green;" text="Generate Reports" />
+      <Button layoutX="14.0" layoutY="307.0" mnemonicParsing="false" onAction="#goBPDBOA" text="Go Back Producer Dashboard" />
    </children>
 </AnchorPane>

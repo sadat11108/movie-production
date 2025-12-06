@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproductionhouse.Delowar_2420208.Director.DirectorDashboardController">
    <left>
       <VBox prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
@@ -25,7 +24,7 @@
             <Button mnemonicParsing="false" onAction="#crewMessageButtonOnAction" prefWidth="150.0" text="Crew Messages" />
             <Button mnemonicParsing="false" onAction="#dailyReportsButtonOnAction" prefWidth="150.0" text="Daily Reports" />
             <Button mnemonicParsing="false" onAction="#submitReleaseButtonOnAction" prefWidth="150.0" text="Submit for Release" />
-            <Button mnemonicParsing="false" onAction="#directorHomeButtonOnAction" prefWidth="150.0" text="Home" />
+            <Button mnemonicParsing="false" onAction="#goBackLoginHomeOA" prefWidth="150.0" text="Home" />
          </children>
       </VBox>
    </left>

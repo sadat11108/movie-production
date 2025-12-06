@@ -26,5 +26,6 @@
       <Label layoutX="45.0" layoutY="226.0" text="Write Review:" />
       <TextArea fx:id="writeReviewTextArea" layoutX="123.0" layoutY="226.0" prefHeight="89.0" prefWidth="378.0" />
       <Button layoutX="418.0" layoutY="332.0" mnemonicParsing="false" onAction="#saveReviewButtonOnAction" style="-fx-background-color: green;" text="Save Review" />
+      <Button layoutX="45.0" layoutY="345.0" mnemonicParsing="false" onAction="#goBPDBOA" text="Go Back Producer Dashboard" />
    </children>
 </AnchorPane>

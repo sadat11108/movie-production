@@ -25,5 +25,6 @@
       <Label layoutX="278.0" layoutY="79.0" text="Report Details:" />
       <TextArea fx:id="reportDetailsTextArea" layoutX="278.0" layoutY="100.0" prefHeight="125.0" prefWidth="313.0" />
       <Button layoutX="501.0" layoutY="242.0" mnemonicParsing="false" onAction="#saveRemarksButtonOnAction" style="-fx-background-color: green;" text="Save Remarks" />
+      <Button layoutX="300.0" layoutY="364.0" mnemonicParsing="false" onAction="#goBDDBOA" text="Go Back Director Dashboar" />
    </children>
 </AnchorPane>

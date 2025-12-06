@@ -28,5 +28,6 @@
       <TextField fx:id="remarksTextField" layoutX="151.0" layoutY="270.0" />
       <Button layoutX="412.0" layoutY="279.0" mnemonicParsing="false" onAction="#updateButtonOnAction" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: brown;" text="Update" />
       <Label layoutX="48.0" layoutY="54.0" text="Track Progress:" />
+      <Button layoutX="48.0" layoutY="347.0" mnemonicParsing="false" onAction="#goBPDBOA" text="Go Back Producer Dashboard" />
    </children>
 </AnchorPane>

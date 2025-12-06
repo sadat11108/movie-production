@@ -1,6 +1,8 @@
 package com.example.movieproductionhouse.Delowar_2420208.Director;
 
 import com.example.movieproductionhouse.HelloApplication;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -24,15 +26,19 @@ public class CreateMovieController
     @javafx.fxml.FXML
     private TableColumn<MovieItem, String> descriptionTableColumn;
     @javafx.fxml.FXML
-    private TableView<MovieItem> existingMoviesTableView;
-    @javafx.fxml.FXML
     private TextField movieTitleTextField;
+    @javafx.fxml.FXML
+    private TableView<MovieItem> saveMovieTableView;
+
+    ObservableList<MovieItem> movieList = FXCollections.observableArrayList();
 
     @javafx.fxml.FXML
     public void initialize() {
         titleTableColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
         genreTableColumn.setCellValueFactory(new PropertyValueFactory<>("genre"));
         descriptionTableColumn.setCellValueFactory(new PropertyValueFactory<>("description"));
+
+        saveMovieTableView.setItems(movieList);
 
     }
 
@@ -48,7 +54,7 @@ public class CreateMovieController
         }
 
         MovieItem movie = new MovieItem(title, genre);
-        existingMoviesTableView.getItems().add(movie);
+        saveMovieTableView.getItems().add(movie);
         movieTitleTextField.clear();
         genreTextField.clear();
         descriptionTextArea.clear();

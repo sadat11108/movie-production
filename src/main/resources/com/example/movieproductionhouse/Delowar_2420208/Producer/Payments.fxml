@@ -26,5 +26,6 @@
       <Label layoutX="38.0" layoutY="277.0" text="Payment Details:" />
       <TextArea fx:id="paymentDetailsTextArea" layoutX="132.0" layoutY="269.0" prefHeight="87.0" prefWidth="375.0" />
       <Button layoutX="482.0" layoutY="361.0" mnemonicParsing="false" onAction="#payButtonOnAction" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: green;" text="Pay" />
+      <Button layoutX="38.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBPDBOA" text="Go Back Producer Dashboard" />
    </children>
 </AnchorPane>
